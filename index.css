@@ -1,0 +1,1027 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.B-back{
+  color: #4E5155;
+  border: 1px solid #a7a5a6;
+  text-align: center;
+  font-size: 15px; 
+  height: 35px;
+  width: 110px;
+  border-radius: 5px;
+  /* padding-top: 2px; */
+  cursor: pointer;
+  font-family: 'Prompt', sans-serif;
+  /* font-weight:bold; */
+  display: flex;
+  background-color:#e4e6e5;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.4s;
+}
+
+.B-back2{
+  color: #4E5155;
+  border: 1px solid #a7a5a6;
+  text-align: center;
+  font-size: 15px; 
+  height: 35px;
+  width: 110px;
+  border-radius: 5px;
+  /* padding-top: 2px; */
+  cursor: pointer;
+  font-family: 'Prompt', sans-serif;
+  /* font-weight:bold; */
+  display: none;
+  background-color:#e4e6e5;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.4s;
+}
+
+.B-back2:hover{
+  background-color:#d3d3d3;
+}
+
+.B-back:hover{
+  background-color:#d3d3d3;
+}
+
+.B-back-H{
+  color: #4E5155;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  /* padding-top: 2px; */
+  cursor: pointer;
+  font-family: 'Prompt', sans-serif;
+  /* font-weight:bold; */
+  display: none;
+  background-color:#e4e6e5;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.4s;
+  margin-top: 20px;
+}
+
+.B-back-H3{
+  color: #4E5155;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: 'Prompt', sans-serif;
+  display: none;
+}
+
+.B-back-H:hover{
+  background-color:#d3d3d3;
+}
+
+
+.T-Edit{
+  margin-left: 3px;
+  margin-top: 3px;
+}
+
+
+.iconBack{
+  display: flex;
+}
+
+ion-icon {
+  height: 20px;
+  width: 20px;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.M-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fcfdfd;
+}
+
+.button {
+  color: white;
+  text-align: center;
+  font-size: 15px; 
+  height: 30px;
+  width: 65px;
+  border-radius: 5px;
+  padding-top: 2px;
+  border: 0px solid #ffffff00; 
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center; 
+}
+
+
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.buttonSave:disabled {
+  background-color: #03a96c6b;
+  color: white;
+  text-align: center;
+  font-size: 15px; 
+  height: 39px;
+  width: 70px;
+  border-radius: 5px;
+  border: 0px solid #ffffff00; 
+  cursor: pointer;
+  
+}
+
+.buttonSave:enabled {
+  background-color: #03a96c;
+  color: white;
+  text-align: center;
+  font-size: 15px; 
+  height: 39px;
+  width: 70px;
+  border-radius: 5px;
+  border: 0px solid #ffffff00; 
+  cursor: pointer;
+  
+}
+
+.buttonCancle {
+  background-color:  #d9534f;
+  color: white;
+  text-align: center;
+  font-size: 15px; 
+  height: 39px;
+  width: 70px;
+  border-radius: 5px;
+  border: 0px solid #ffffff00; 
+  cursor: pointer;
+  transition-duration: 0.4s;
+
+}
+
+.buttonSave:enabled:hover {
+  background-color: #079963;
+  color: white;
+}
+
+.buttonCancle:hover {
+  background-color:#c9302c;
+  color: white;
+
+}
+
+.cancle {
+  background-color: #2e2e2e15; /* สีปุ่ม */
+  color: rgb(0, 0, 0);
+  transition-duration: 0.4s;
+}
+
+.cancle:hover {
+  background-color: #d10902a9;
+  color: white;
+}
+
+.button1 {
+  background-color: #faaa3abe;
+  color: white;
+  transition-duration: 0.4s;
+}
+/* ก่อนชี้ */
+
+.button1:hover {
+  background-color:  #f8960e;
+  color: white;
+} /*หลังชี้*/
+
+table,
+td,
+th {
+  /* border: 1px  solid rgb(212, 212, 212);  */
+  text-align: center;
+  font-family: 'Prompt', sans-serif;
+  font-size: 14px; 
+}
+
+
+table {
+  width: 100%;
+}
+
+.modal-h{
+  background:  #03a96c93;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+  border-top-left-radius: calc(.3rem - 1px);
+  border-top-right-radius: calc(.3rem - 1px);
+  font-family: 'Prompt', sans-serif;
+}
+
+th {
+  background-color:  #03a96c6b;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  padding: 7px;
+  font-weight:470;
+}
+
+tbody th{
+  background-color: #49a37900;
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+  
+}
+
+th.No {
+  width:10% ;
+  
+}
+
+th.Data {
+  width: 50%;
+}
+
+td.AddData{
+  text-align: center;
+  color: rgb(114, 113, 113);
+}
+
+td.EditData{
+  text-align: center;
+  color: rgb(114, 113, 113);
+}
+
+td.DataV{
+text-align: center;
+color: rgb(114, 113, 113);
+padding: 16px;
+}
+
+td.DataS{
+  text-align: left;
+  color: rgb(114, 113, 113);
+  padding: 16px;
+}
+
+th.Edit {
+  width: 5%;
+  background-color: #03a96cbd;
+  color: rgb(255, 255, 255);
+}
+
+th.AddData {
+  width:15%;
+}
+
+th.EditData {
+  width: 15%;
+}
+th.Delete {
+  width: 5%;
+  background-color:   #03a96cbd;
+  color: rgb(255, 255, 255);
+}
+
+td.Edit {
+  padding-left: 20px;
+}
+td.Delete {
+  padding-left: 20px;
+}
+
+
+.table td.Edit{
+  padding-left: 20px;
+}
+
+.table td.Delete{
+  padding-left: 20px;
+}
+
+/*ตาราง*/
+
+.buttonS {
+  width: "50px";
+  margin-top: 10px;
+  margin-left: 370px;
+  /* margin: 0px; */
+  /* padding: 1cm; */
+  word-spacing: 30px;
+}
+
+.fontH {
+  font-family: 'Prompt', sans-serif;
+  margin: 0;
+  height: 43px;
+  color: #006c68;
+  background-color: #ffffff00;
+}
+.font {
+  font-family: 'Prompt', sans-serif;
+}
+
+.font-T {
+  color: #fc0101;
+  font-family: 'Prompt', sans-serif;
+  padding: 0.5em;
+  font-size: 0.7rem;
+}
+
+.iinput {
+  padding: 1em;
+  height: 10px;
+  margin-left: 0px;
+  width: 450px;
+}
+
+/* .my-col2-2{
+  display: flex;
+  justify-items: right;
+} */
+
+.my-row {
+  /* border: 3px solid #00ff22; */
+  height: 100%;
+}
+
+.my-col {
+  border: 0px solid #e91414;
+  background-color: #fdfdfd;
+  margin: 0;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.308);
+  margin-top: 20px;
+}
+
+.con1{
+  display: inline;
+}
+
+.barH{
+  background-color: #03a96c;
+  height: 35px;
+  width: 4px;
+}
+
+.head-barH {
+display: flex;
+}
+
+.head-barH1 {
+  display: flex;
+}
+
+.head-barH0 {
+  display: flex;
+}
+
+
+.fontH1{
+  font-family: 'Prompt', sans-serif;
+  font-size: 150%;
+  margin-left: 15px;
+  font-size: 22px;
+}
+
+
+.Eyear{
+  background-color: #058d54de;
+  color: #ffffff;
+  width: 90px;
+  height: 25px;
+  text-align: center;
+  border-radius: 5px;
+  font-family: 'Prompt', sans-serif;
+  font-size: 14px;
+  margin-top: 3px;
+  padding-top: 2px;
+  margin-left: 20px;
+  /* margin-left: -30px; */
+}
+
+.Sum{
+  background-color: #4e4e4e54;
+  color: #000000;
+  width: 170px;
+  height: 40px;
+  text-align: center;
+  border-radius: 30px;
+  font-family: 'Prompt', sans-serif;
+  font-size: 14px;
+  padding-top: 10px;
+  margin-top: 50px;
+}
+
+.B-back1{
+display: none;
+}
+
+.year{
+  background-color: #050505a9;
+  color: #ffffff;
+  width: 70px;
+  height: 25px;
+  text-align: center;
+  border-radius: 5px;
+  font-family: 'Prompt', sans-serif;
+  font-size: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 2px;
+  margin-top: 3px;
+  
+}
+
+.HP-name{
+  background-color: #03a96c;
+  color: #000000;
+  width: 120px;
+  height: 25px;
+  text-align: center;
+  border-radius: 5px;
+  font-family: 'Prompt', sans-serif;
+  font-size: 14px;
+  /* padding-left: 35px;
+  padding-right: 32px; */
+  padding-top: 3px;
+  font-weight: 470;
+  margin-bottom: 0px;
+}
+
+.HP-name,.P-name,.HP-nameP{
+  margin-top: 10px;
+}
+
+.P-name{
+  display: inline;
+}
+
+.L-button{
+  display: none;
+}
+
+.my-col3{
+  padding-left: 0px;
+  /* border: 3px solid #c50000; */
+  height: 60px;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.my-col3-1{
+  padding-left: 0px;
+  /* border: 3px solid #c500bb; */
+  height: 60px;
+  padding-top: 20px;
+  padding-left: 1px;
+}
+
+
+.HP-nameP{
+  background-color:  #03a96c94;
+  color: #000000;
+  width: 120px;
+  height: 25px;
+  text-align: center;
+  border-radius: 5px;
+  font-family: 'Prompt', sans-serif;
+  font-size: 14px;
+  /* padding-left: 35px;
+  padding-right: 32px; */
+  padding-top: 3px;
+  font-weight: 470;
+  margin-top: 0px;
+}
+
+.P-name{
+  color: #000000;
+  font-family: 'Prompt', sans-serif;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.my-col2 {
+  /* border: 3px solid #0000c5; */
+  background-color: #ffffff00;
+  margin: 0;
+  padding-top: 7px;
+  /* padding-left: 0px; */
+}
+
+.newAnswer{
+  margin-left: 5%;
+}
+
+.my-col2-1 {
+  /* border: 3px solid #0000c5; */
+  display: flex;
+  background-color: #ffffff00;
+  margin: 0;
+  padding-top: 20px;
+  
+}
+
+.modal-Body {
+  background: #ffffff;
+  font-family: 'Prompt', sans-serif;
+}
+
+.background {
+  background: #e4e6e5;
+  min-height: 100vh;
+}
+
+.my-rowEnd{
+  height: 50px;
+
+}
+
+.D-cen {
+  text-align: center;
+  margin-left: 10px;
+}
+
+.navv {
+  background-color: lawngreen;
+  width: 100%;
+  height: 500px;
+}
+
+.navbar-custom {
+  height: 80px;
+  background-color: #2f3337;
+  transition: box-shadow 0.5s;
+  box-shadow: 0px 0px 10px 0px #000;
+}
+
+.logo-ku-userpage {
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.backAdmin {
+  background-color: #0badab46;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 0px rgba(58, 59, 59, 0.425);
+  cursor: pointer;
+  height: 50%;
+  -webkit-border-radius: 4px;
+}
+
+.Hader2 {
+  font-family: 'Prompt', sans-serif;
+  padding-top: 7px;
+  color: #4e4e4e;
+  /* margin: 8px; */
+}
+
+.my-col2-2{
+  display: flex;
+  justify-content: left;
+  margin-top: 40px;
+  /* align-items: center; */
+  /* border: 3px solid #c500bb; */
+}
+ .head-barH2{
+   display: flex;
+ }
+
+
+.Line {
+  background-color: #ffffff;
+  height: 3px;
+  border-radius: 10px;
+  margin: 10px;
+  
+}
+
+.back-table th {
+  background-color: #b2bb1c;
+}
+
+/* .swal-button {
+  padding: 7px 19px;
+  border-radius: 2px;
+  background-color: #50ac8d;
+  font-size: 12px;
+}
+
+.swal-button:hover {
+  padding: 7px 19px;
+  border-radius: 2px;
+  background-color: #ac5050;
+  font-size: 12px;
+} */
+
+/* .swal-modal {
+  width: 30%;
+} */
+
+@media only screen and (min-width: 1565px) {
+  .P-name{
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 1565px) {
+  .P-name{
+    padding-left: 10px;
+  }
+}
+
+
+
+@media only screen and (max-device-width: 767px) {
+
+  .fontH1{
+    font-size: 22px;
+  }
+  .P-name{
+    margin-top: 12px;
+    margin-left: 0px;
+  }
+
+  .my-col2-1{
+    display: none;
+    height: 0px;
+    width: 0px;
+  }
+  .iconBack{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    
+  }
+
+
+        .col-Table{
+        margin-left: 20px;
+        margin-right: 20px;
+
+      }
+
+      .P-name{
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+        display: block;
+      }
+
+      .head-barH{
+        justify-content: center;
+        
+      }
+
+      .barH-fontH1{
+        display: flex;
+      }
+    
+      .head-barH1{
+        justify-content: center;
+        /* margin-top: 10px; */
+      }
+      
+      .my-col3-1{
+        text-align: center;
+      }
+    
+      .head-barH0 {
+        display: flex;
+        }
+
+      
+  .my-col3{
+    height: 100%;
+    padding-top: 0px;
+      }
+
+      .my-col2{
+        text-align: center;
+      }
+
+      .B-back{
+        margin-top: 10px;
+      }
+
+      .my-col2-2{
+        margin-top: 0px;
+        /* border: 3px solid #c500bb; */
+      }
+
+      .B-back2{
+        display: flex;
+        margin-right: 20px;
+        margin-top: 20px;
+      }
+
+      .my-col2-2{
+        display: none;
+      }
+      .head-barH0 {
+        margin-top: 20px;
+      }
+
+      .HP-name{
+        margin-bottom: 8px;
+      } 
+}
+
+
+
+
+
+@media only screen and (max-width: 575px) {
+  
+  .B-back-H{
+    margin-top: 0px;
+  }
+  .head-barH1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Eyear{
+    font-size: 12px;
+    width: 70px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+.year{
+  font-size: 12px;
+  width: 70px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+}
+
+@media only screen and (max-width: 420px) {
+.fontH1{
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+}
+
+
+
+
+@media only screen and (max-width: 320px) {
+  table,
+  td,
+  th {
+    font-size: 12px;
+  }
+
+  .fontH {
+    font-size: 25px;
+    height: 35px;
+  }
+
+  .Hader2 {
+    font-size: 11.2px;
+  }
+
+  .button {
+    border: 0px solid #ffffff00;
+  }
+
+  .my-col2 {
+    height: 100%;
+  }
+
+  .HP-name{
+    margin-top: 10px;
+    
+  } 
+  
+  .P-name, .HP-nameP {
+    margin-top: 0px;
+}
+
+  .my-col {
+    margin-top: 0px;
+  }
+
+  .my-col3{
+    height: 100%;
+  }
+
+  .my-col3-1{
+    padding-top: 0px;
+    height: 40px;
+  }
+  .my-col2-1 {
+height: 0px;
+margin: 0px;
+padding: 0px;
+  }
+
+.barH{
+  height: 70px;
+}
+.Eyear{
+  margin-left: 0px;
+}
+
+.P-name{
+  font-size: 13px;
+}
+
+}
+
+
+
+/* inspired by: https://css-tricks.com/responsive-data-tables/ */
+.responsiveTable {
+  width: 100%;
+}
+
+.responsiveTable td .tdBefore {
+  display: none;
+}
+
+@media screen and (max-width: 40em) {
+  /*
+    Force table elements to not behave like tables anymore
+    Hide table headers (but not display: none;, for accessibility)
+  */
+
+  .responsiveTable table,
+  .responsiveTable thead,
+  .responsiveTable tbody,
+  .responsiveTable th,
+  .responsiveTable td,
+  .responsiveTable tr {
+    display: block;
+  }
+
+  .tdBefore{
+    color: rgb(7, 7, 7);
+    font-size: 0.8rem;
+  }
+
+  table, td, th {
+    font-size: 14px;
+  }
+
+  .responsiveTable thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    border-bottom: 2px solid rgb(51, 51, 51);
+    
+  }
+
+  .responsiveTable tbody tr {
+    /* border: 1px solid #000;
+    padding: 0.25em; */
+    border: 0px;
+padding: 0px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .responsiveTable td.pivoted {
+    background-color: rgb(255, 255, 255);
+    /* Behave like a "row" */
+    border: none !important;
+    position: relative;
+    padding-left: calc(50% + 10px) !important;
+    text-align: left !important;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+  }
+
+  .responsiveTable td .tdBefore {
+    /* Now like a table header */
+    position: absolute;
+    display: block;
+
+    /* Top/left values mimic padding */
+    left: 1rem;
+    width: calc(50% - 20px);
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    text-align: left !important;
+    font-weight: 600;
+  }
+
+  .button {
+    /* padding-left: 15px; */
+    font-size: 15px;
+  }
+
+  .cancle {
+    background-color: #bb0303f6; /* สีปุ่ม */
+    color: rgb(255, 255, 255);
+    transition-duration: 0.4s;
+  }
+  
+  .cancle:hover {
+    background-color: #d10902;
+    color: white;
+  }
+
+  .M-icon{
+    display: flex;
+    justify-content: left;
+    /* padding-top: 10px; */
+  }
+}
+
+@media screen and (max-width: 640px){
+  tbody th{
+    background-color: #03a96cc9;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+  }
+
+  .B-back-H{
+    width: 40px;
+    height: 40px;
+    margin-top: 0px;
+    border: none;
+  }
+
+  .back{
+    display: none;
+  }
+
+  .head-barH0 {
+    display: block;
+    /* background-color: royalblue; */
+    /* margin-right: 6%; */
+  }
+
+  .head-barH2{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+     /* width: 100%; */
+     /* background-color: salmon; */
+     /* justify-content: center; */
+  }
+
+  .barH{
+    display: none;
+  }
+
+  .B-back-H{
+    display: flex;
+    /* justify-content: left; */
+    align-items: center;
+    /* background-color: seagreen; */
+  }
+
+  .B-back-H3{
+    display: flex;
+    /* justify-content: left; */
+    align-items: center;
+    /* background-color: seagreen; */
+  } 
+
+  .B-back2{
+    display: none;
+  }
+
+  .Eyear{
+    margin-left: 0px;
+  }
+}
+
